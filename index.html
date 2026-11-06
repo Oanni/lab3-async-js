@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Доска публикаций</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Доска публикаций</h1>
+
+    <button id="loadBtn" class="btn">Загрузить публикации</button>
+
+    <form id="postForm" class="form">
+      <input type="text" id="titleInput" placeholder="Заголовок" required>
+      <textarea id="textInput" placeholder="Текст" required></textarea>
+      <button type="submit" class="btn">Создать публикацию</button>
+    </form>
+
+    <div id="postsList" class="posts-list"></div>
+
+    <div id="message" class="message"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
